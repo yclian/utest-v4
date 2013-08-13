@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+apply from: 'libraries.gradle'
+
+defaultTasks 'clean build'
+group = 'com.servicerocket.utest.v4'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile libraries.commonsLang
+    compile libraries.findbugs
+    compile libraries.guava
+    compile libraries.httpClient
+    compile libraries.springWeb
+    testCompile libraries.junit
+    testCompile libraries.log4j
+}

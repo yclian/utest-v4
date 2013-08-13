@@ -1,0 +1,22 @@
+ext {
+
+    commonsLangVersion = '3.+'
+    findbugsVersion = "2.+"
+    guavaVersion = '14.+'
+    httpClientVersion = '4.+'
+    junitVersion = '4.+'
+    log4jVersion = '1.+'
+    springWebVersion = '3.+'
+    
+    libraries = [
+        commonsLang: "org.apache.commons:commons-lang3:${commonsLangVersion}",
+        findbugs: "com.google.code.findbugs:jsr305:${findbugsVersion}",
+        guava: "com.google.guava:guava:${guavaVersion}",
+        httpClient: "org.apache.httpcomponents:httpclient:${httpClientVersion}",
+        junit: "junit:junit:${junitVersion}",
+        log4j: "log4j:log4j:${log4jVersion}",
+        springWeb: "org.springframework:spring-web:${springWebVersion}"
+    ]
+    
+}
+
