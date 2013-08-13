@@ -15,6 +15,7 @@ dependencies {
     compile libraries.findbugs
     compile libraries.guava
     compile libraries.httpClient
+    compile libraries.jackson
     compile libraries.springWeb
     testCompile libraries.junit
     testCompile libraries.log4j
